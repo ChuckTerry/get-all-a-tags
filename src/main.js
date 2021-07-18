@@ -5,7 +5,7 @@ const getAllATags = function getAllATags() {
   let aTagList = document.getElementsByTagName(`a`);
   let indent = `              `;
 
-  // format innerHTML strings for proper line indention and blank line removal
+  // Format innerHTML strings for proper line indention and blank line removal
   const formatInnerHtml = function formatInnerHtml(htmlString) {
 
     let innerHTML = htmlString;
