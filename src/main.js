@@ -1,6 +1,6 @@
 const getAllATags = function getAllATags() {
 
-  let outList = ``;
+  let outList = ``; //
   let emptyAList = ``;
   let aTagList = document.getElementsByTagName(`a`);
   let indent = `              `;
@@ -118,5 +118,6 @@ const getAllATags = function getAllATags() {
 
   downloadLink.href = window.URL.createObjectURL(textFileBlob);
   downloadLink.click();
+  URL.revokeObjectURL(downloadLink.href);
 
 }
